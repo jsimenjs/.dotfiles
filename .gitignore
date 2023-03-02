@@ -1,0 +1,10 @@
+# Ignore everything
+/*
+
+# Not these directories
+!nvim/
+
+# Not these files
+!.gitignore
+!README.md
+# !.env
