@@ -4,7 +4,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function()
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    use { "catppuccin/nvim", as = "catppuccin" }
+    use "folke/tokyonight.nvim"
     use "nvim-lua/plenary.nvim"
 
     use {
@@ -65,8 +65,6 @@ use {
 }
 use {
     'goolord/alpha-nvim',
-    config = function ()
-        require'alpha'.setup(require'alpha.themes.dashboard'.config)
-    end
+    lazy = true
 }
 end)
