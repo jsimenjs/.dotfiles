@@ -63,6 +63,7 @@ use {
         }
     end
 }
+use 'mfussenegger/nvim-dap'
 use {
     'goolord/alpha-nvim',
     lazy = true
