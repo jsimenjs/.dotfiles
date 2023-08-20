@@ -1,4 +1,7 @@
 local wk = require("which-key")
+local opts = {}
+wk.register(vim.keymap, opts)
+
 -- As an example, we will create the following mappings:
 --  * <leader>ff find files
 --  * <leader>fr show recent files
@@ -8,10 +11,3 @@ local wk = require("which-key")
 --  * <leader>fe edit file
 -- and hide <leader>1
 
-wk.register({
-  p = {
-      name = "file",
-      f = "find file",
-      v = "view file tree",
-  },
-}, { prefix = "<leader>" })
